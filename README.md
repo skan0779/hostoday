@@ -22,8 +22,8 @@
 **Service Design**
 
 <p align="center">
-  <img src="./docs/resource_architecture.png"
-       alt="Agent Resource 아키텍처"
+  <img src="./project_design.png"
+       alt="Project Design"
        style="width: 80%; height: auto;">
 </p>
 
