@@ -16,7 +16,7 @@
 <p align="center">
   <img src="./thumbnail.jpg"
        alt="Thumbnail.jpg"
-       style="width: 80%; height: auto;">
+       style="width: 30%; height: auto;">
 </p>
 
 ---
