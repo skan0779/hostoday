@@ -13,6 +13,12 @@
 
 > 국내 아파트 매물을 Airbnb 호스트로 전환 시 수익을 예측해주는 PoC 서비스 (수익 예측 기반 호스트 유치 솔루션)
 
+<p align="center">
+  <img src="./thumbnail.png"
+       alt="Thumbnail.png"
+       style="width: 80%; height: auto;">
+</p>
+
 ---
 
 
