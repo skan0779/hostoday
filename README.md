@@ -1,14 +1,14 @@
 # Hostoday
 
-![Java](https://img.shields.io/badge/Java-11+-red?logo=oracle&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring-Framework-brightgreen?logo=spring&logoColor=white)
-![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-ORM-brightgreen)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-DB-336791?logo=postgresql&logoColor=white)
-![Apache POI](https://img.shields.io/badge/Apache%20POI-Excel%2FWord-orange)
-![Vue.js](https://img.shields.io/badge/Vue.js-3-4FC08D?logo=vue.js&logoColor=white)
-![Axios](https://img.shields.io/badge/Axios-HTTP-blue)
-![Vuex](https://img.shields.io/badge/Vuex-State%20Management-35495E)
-![Chart.js](https://img.shields.io/badge/Chart.js-Data%20Viz-FF6384)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-DataFrame-150458?logo=pandas&logoColor=white)
+![GeoPandas](https://img.shields.io/badge/GeoPandas-Geospatial-0E4D92)
+![Folium](https://img.shields.io/badge/Folium-Map-77B829)
+![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?logo=plotly&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-Model-FF6F00)
+![RandomForest](https://img.shields.io/badge/RandomForest-Model-228B22)
+![CatBoost](https://img.shields.io/badge/CatBoost-Model-FFCC00)
 
 
 > 국내 아파트 매물을 Airbnb 호스트로 전환 시 수익을 예측해주는 PoC 서비스 (수익 예측 기반 호스트 유치 솔루션)
@@ -50,24 +50,34 @@
 
 
 ## 2. 기술 스택
-> ML/DL Model 기반 PoC 서비스입니다.
+> XGBoost, RandomForest, CatBoost 모델을 사용하여 집값을 예측하는 ML 기반 PoC 서비스입니다.
 
-| Layer | Tech |
-| ----- | ---- |
-| DB    | PostgreSQL |
-| WAS   | Java Spring |
-| Web   | Vue.js |
+| 구분        | 기술 |
+|------------|------|
+| Language   | Python 3.12 |
+| Web UI     | Streamlit, streamlit-folium |
+| Data       | pandas, numpy, GeoPandas |
+| Visualization | Plotly Express, Folium, Matplotlib |
+| Geo/Spatial   | Shapely, Geopy |
+| ML Model | XGBoost, RandomForest, CatBoost |
 
 
 ---
 
 
 ## 3. 실행 방법
-> 3개의 서버를 각각 실행하여 확인 가능합니다. 
-
+> 기본 포트: http://localhost:8501
 
 ```sh
+# 1. 가상환경 설치
+python -m venv venv
+source venv/bin/activate
 
+# 2. 필수 라이브러리 설치
+pip install streamlit pandas numpy plotly folium streamlit-folium geopandas geopy shapely matplotlib
+
+# 3. 어플리케이션 실행
+streamlit run hostoday_streamlit_ui.py
 ```
 
 
@@ -85,5 +95,4 @@ hostoday/
     ├── .gitignore
     └── requirements.txt
 ```
-
 
